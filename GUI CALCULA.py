@@ -45,6 +45,10 @@ class Calculator(QtWidgets.QDialog):
                 result = num1 * num2
                 self.answerbox.setText(str(result))
 
+            elif sign == '%':
+                result = num1 % num2
+                self.answerbox.setText(str(result))
+
         except ValueError:
             self.answerbox.setTEXT('Invalid Number')
 
